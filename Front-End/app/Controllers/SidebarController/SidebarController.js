@@ -26,6 +26,12 @@ function SidebarController( $mdSidenav ) {
                 iconClass: 'fa-list',
                 sref: 'site.result',
                 href: '#'
+            },
+            {
+                name: 'Account Management',
+                iconClass: 'fa-user-circle',
+                sref: 'site.accountmanagement',
+                href: '#'
             }
         ]
     };
