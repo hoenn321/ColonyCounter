@@ -1,0 +1,38 @@
+<div ng-controller="AccountController as accountController">
+	<div layout="column">
+		<h1 class="md-display-3">Account Management</h1>
+	</div>
+	<div layout="column">
+		<md-input-container>
+			<label>Username</label>
+			<input type="text" ng-model="accountController.user.username" />
+		</md-input-container>
+	</div>
+	<div layout="column">
+		<md-input-container>
+			<label>Full Name</label>
+			<input type="text" ng-model="accountController.user.fullName" />
+		</md-input-container>
+	</div>
+	<div layout="column">
+		<md-input-container>
+			<label>Email</label>
+			<input type="text" ng-model="accountController.user.email"/>
+		</md-input-container>
+	</div>
+	<div layout="column">
+		<md-input-container>
+			<label>Set New Password</label>
+			<input type="text" ng-model="accountController.user.setnewpassword" />
+		</md-input-container>
+	</div>
+	<div layout="column">
+		<md-input-container>
+			<label>Confirm New Password</label>
+			<input type="text" ng-model="accountController.user.confirmnewpassword"/>
+		</md-input-container>
+	</div>
+	<div layout="column">
+		<md-button class="md-raised md-primary"><i class="fa fa-floppy-o"></i> Save</md-button>
+	</div>
+</div>
