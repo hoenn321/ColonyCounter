@@ -18,7 +18,8 @@
       'App.TutorialController',
       'App.ResultController',
       'App.ImageFactory',
-      'App.fileInput'
+      'App.fileInput',
+      'App.AccountController'
   ])
 .controller('MainController', [ function( ) {
 }])
@@ -74,6 +75,14 @@
         views: {
             'content@': {
                 templateUrl: 'Controllers/ResultController/ResultController.html',
+            }
+        }
+    })
+     .state('site.accountmanagement', {
+        url: '/account',
+        views: {
+            'content@': {
+                templateUrl: 'Controllers/AccountController/AccountController.html',
             }
         }
     });
